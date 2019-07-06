@@ -14,4 +14,6 @@ This repo is a little collection of custom Python Qt5 widgets I've built myself.
 
 For explanations of the individual widgets and APIs see [the custom widget library on LearnPyQt](https://www.learnpyqt.com/widgets/). 
 
+All code is licensed MIT/BSDv2, alternate licensing available on request. Feel free to use in your own projects.
+
 More custom widgets will follow, *if you have ideas just let me know!*
