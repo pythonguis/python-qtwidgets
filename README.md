@@ -4,7 +4,7 @@ Qt5 comes with a huge number of widgets built-in, from simple text boxes to digi
 
 ![Graphical Equalizer](https://i.imgur.com/0F2ZgqE.gif)
 
-This repo is a little collection of custom Python Qt5 widgets I've built myself. They are compatible with both PyQt5 and PySide2 (Qt for Python). Currently the repository includes —
+This repo is a little collection of [custom Python Qt5 widgets](https://www.learnpyqt.com/widgets/) I've built myself. They are compatible with both PyQt5 and PySide2 (Qt for Python). Currently the repository includes —
 
 1. **ColorButton** — a single button showing a selected colour. Left-click to change, or right click to reset to `None`. Uses the platform colour selection tool to choose colours.
 2. **EqualizerBar** - [a graphical equalizer visualisation](https://www.learnpyqt.com/widgets/equalizerbar/) for displaying audio frequency changes. Customiseable colours and channels.
