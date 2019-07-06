@@ -12,8 +12,9 @@ This repo is a little collection of custom Python Qt5 widgets I've built myself.
 4. **Paint** — a scribble pad, left-click to draw, right-click to fill. The colours are customizable, try hooking it to the ColorButton or Palette.
 5. **Palette** — a [array of colours to choose from](https://www.learnpyqt.com/widgets/palette/), can be arranged horizontally, vertically or in a grid.
 
-For explanations of the individual widgets and APIs see [the custom widget library on LearnPyQt](https://www.learnpyqt.com/widgets/). 
-
-**Licensed MIT/BSDv2**  — feel free to use in your own projects.
+For a more detailed introduction to each widget and a walkthrough of their APIs  
+see [the custom widget library on LearnPyQt](https://www.learnpyqt.com/widgets/). 
 
 More custom widgets will follow, *if you have ideas just let me know!*
+
+**Licensed MIT/BSDv2** feel free to use in your own projects.
