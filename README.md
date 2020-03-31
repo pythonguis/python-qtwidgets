@@ -2,7 +2,7 @@
 
 Qt5 comes with a huge number of widgets built-in, from simple text boxes to digital displays, vector graphics canvas and a full-blown web browser. While you can build perfectly functional applications with the built-in widgets, sometimes your applications will need a *more*.
 
-This repo contains a library of [custom Python Qt5 widgets](https://www.learnpyqt.com/widgets/) which are free to use in your own applications. Widgets are compatible with both PyQt5 and PySide2 (Qt for Python). Currently the repository includes —
+This repo contains a library of [custom Python Qt5 widgets](https://www.learnpyqt.com/widgets/) which are free to use in your own applications. Widgets are compatible with both PyQt5 and PySide2 (Qt for Python). Currently the repository includes -
 
 | Widgets | Library |
 | :---: | :---: |

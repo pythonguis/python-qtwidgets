@@ -1,14 +1,19 @@
 from setuptools import setup, find_packages
 
-version = '0.1'
+version = '0.11'
+
+with open("README.md", "r") as fh:
+    long_description = fh.read()
 
 setup(
     name='qtwidgets',
     version=version,
-    url='http://github.com/learnpyqt/python-qtwidgets',
     author='Martin Fitzpatrick',
     author_email='martin.fitzpatrick@gmail.com',
     description='Custom widget library for PyQt5 and PySide2 (Qt for Python). Free to use in your own applications.',
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url='http://github.com/learnpyqt/python-qtwidgets',
     license='MIT',
     packages=find_packages(),
     include_package_data=True,
