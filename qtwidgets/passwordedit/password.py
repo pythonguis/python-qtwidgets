@@ -15,6 +15,7 @@ else:
 class PasswordEdit(QtWidgets.QLineEdit):
     """
     Password LineEdit with icons to show/hide password entries.
+    Based on this example https://kushaldas.in/posts/creating-password-input-widget-in-pyqt.html by Kushal Das.
     """
 
     def __init__(self, show_visibility=True, *args, **kwargs):
