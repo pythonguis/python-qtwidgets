@@ -1,1 +1,1 @@
-from passwordedit import PasswordEdit
+from .password import PasswordEdit
