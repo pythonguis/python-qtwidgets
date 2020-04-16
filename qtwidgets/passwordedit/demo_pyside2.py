@@ -1,5 +1,5 @@
 from PySide2 import QtCore, QtGui, QtWidgets
-from password import PasswordEdit
+from qtwidgets import PasswordEdit
 
 
 class Window(QtWidgets.QMainWindow):

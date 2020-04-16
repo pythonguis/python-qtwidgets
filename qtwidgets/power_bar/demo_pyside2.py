@@ -1,5 +1,5 @@
 from PySide2 import QtCore, QtGui, QtWidgets
-from power_bar import PowerBar
+from qtwidgets import PowerBar
 
 
 app = QtWidgets.QApplication([])

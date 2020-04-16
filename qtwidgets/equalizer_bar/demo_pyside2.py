@@ -1,5 +1,5 @@
 from PySide2 import QtCore, QtWidgets
-from equalizer_bar import EqualizerBar
+from qtwidgets import EqualizerBar
 
 import random
 

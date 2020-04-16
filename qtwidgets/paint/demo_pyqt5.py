@@ -1,5 +1,5 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
-from paint import Paint
+from qtwidgets import Paint
 
 
 class Window(QtWidgets.QMainWindow):
