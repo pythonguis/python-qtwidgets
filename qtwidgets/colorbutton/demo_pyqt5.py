@@ -7,7 +7,7 @@ class Window(QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
 
-        palette = ColorButton()
+        palette = ColorButton(color='red')
         palette.colorChanged.connect(self.show_selected_color)
         self.setCentralWidget(palette)
 

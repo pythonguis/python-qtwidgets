@@ -8,6 +8,7 @@ else:
     from PySide2.QtCore import Qt, Signal
 
 
+
 class ColorButton(QtWidgets.QPushButton):
     '''
     Custom Qt Widget to show a chosen color.
@@ -18,14 +19,15 @@ class ColorButton(QtWidgets.QPushButton):
 
     colorChanged = Signal(object)
 
-    def __init__(self, *args, **kwargs):
+    def __init__(self, *args, color=None, **kwargs):
         super(ColorButton, self).__init__(*args, **kwargs)
 
         self._color = None
+        self._default = color
         self.pressed.connect(self.onColorPicker)
 
-    def sizeHint(self):
-        return QtCore.QSize(32,32)
+        # Set the initial/default state.
+        self.setColor(self._default)
 
     def setColor(self, color):
         if color != self._color:
@@ -56,6 +58,6 @@ class ColorButton(QtWidgets.QPushButton):
 
     def mousePressEvent(self, e):
         if e.button() == Qt.RightButton:
-            self.setColor(None)
+            self.setColor(self._default)
 
         return super(ColorButton, self).mousePressEvent(e)
