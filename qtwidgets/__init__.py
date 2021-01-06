@@ -10,3 +10,4 @@ from .power_bar import PowerBar
 from .palette import PaletteGrid, PaletteHorizontal, PaletteVertical
 # from scrubber
 # from stopwatch
+from .toggle import Toggle, AnimatedToggle
