@@ -1,11 +1,5 @@
-import sys
-if 'PyQt5' in sys.modules:
-    from PyQt5 import QtCore, QtWidgets
-    from PyQt5.QtCore import Qt, pyqtSignal as Signal
-
-else:
-    from PySide2 import QtCore, QtWidgets
-    from PySide2.QtCore import Signal
+from qtpy import QtCore, QtWidgets
+from qtpy.QtCore import Signal
 
 
 PALETTES = {
