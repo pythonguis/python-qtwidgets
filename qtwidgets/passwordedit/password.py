@@ -5,10 +5,10 @@ from qtpy.QtCore import Qt
 from qtpy.QtCore import Signal
 
 if 'PyQt5' in sys.modules or 'PyQt6' in sys.modules:
-    from . import resources_pyqt5
+    from . import resources_pyqt
 
 else:
-    from . import resources_pyside2
+    from . import resources_pyside
 
 
 class PasswordEdit(QtWidgets.QLineEdit):
