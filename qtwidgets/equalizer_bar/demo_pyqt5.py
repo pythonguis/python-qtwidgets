@@ -1,4 +1,4 @@
-from PyQt5 import QtCore, QtWidgets
+from qtpy import QtCore, QtWidgets
 from qtwidgets import EqualizerBar
 
 import random

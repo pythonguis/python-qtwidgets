@@ -1,5 +1,5 @@
-from PyQt5 import QtWidgets
-from qtwidgets import ColorButton
+from qtpy import QtWidgets
+from qtwidgets.color_duo.color_duo import ColorButton
 
 
 class Window(QtWidgets.QMainWindow):

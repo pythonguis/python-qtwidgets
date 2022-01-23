@@ -1,4 +1,4 @@
-from PySide2 import QtCore, QtWidgets
+from qtpy import QtCore, QtWidgets
 from qtwidgets import EqualizerBar
 
 import random
@@ -11,6 +11,7 @@ class Window(QtWidgets.QMainWindow):
 
         self.equalizer = EqualizerBar(5, ['#0C0786', '#40039C', '#6A00A7', '#8F0DA3', '#B02A8F', '#CA4678', '#E06461',
                                           '#F1824C', '#FCA635', '#FCCC25', '#EFF821'])
+
         self.setCentralWidget(self.equalizer)
 
         self._timer = QtCore.QTimer()
@@ -23,6 +24,8 @@ class Window(QtWidgets.QMainWindow):
             min(100, v+random.randint(0, 50) if random.randint(0, 5) > 2 else v)
             for v in self.equalizer.values()
             ])
+
+
 
 
 app = QtWidgets.QApplication([])
