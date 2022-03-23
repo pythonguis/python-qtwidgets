@@ -3,10 +3,13 @@ if 'PyQt5' in sys.modules:
     from PyQt5 import QtCore, QtGui, QtWidgets
     from PyQt5.QtCore import Qt
 
-else:
+elif 'PySide2' in sys.modules:
     from PySide2 import QtCore, QtGui, QtWidgets
     from PySide2.QtCore import Qt
 
+else:
+    from PySide6 import QtCore, QtGui, QtWidgets
+    from PySide6.QtCore import Qt
 
 class Paint(QtWidgets.QLabel):
 

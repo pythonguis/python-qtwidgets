@@ -3,11 +3,14 @@ if 'PyQt5' in sys.modules:
     from PyQt5 import QtCore, QtWidgets
     from PyQt5.QtCore import Qt, pyqtSignal as Signal
 
-else:
+elif 'PySide2' in sys.modules:
     from PySide2 import QtCore, QtWidgets
-    from PySide2.QtCore import Signal
+    from PySide2.QtCore import Qt
 
-
+else:
+    from PySide6 import QtCore, QtWidgets
+    from PySide6.QtCore import Qt, Signal
+    
 PALETTES = {
     # bokeh paired 12
     'paired12':['#000000', '#a6cee3', '#1f78b4', '#b2df8a', '#33a02c', '#fb9a99', '#e31a1c', '#fdbf6f', '#ff7f00', '#cab2d6', '#6a3d9a', '#ffff99', '#b15928', '#ffffff'],
