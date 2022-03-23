@@ -5,12 +5,17 @@ if 'PyQt5' in sys.modules:
     from PyQt5.QtCore import pyqtSignal as Signal
     from . import resources_pyqt5
 
-else:
+elif 'PySide2' in sys.modules:
     from PySide2 import QtCore, QtGui, QtWidgets
     from PySide2.QtCore import Qt
     from PySide2.QtCore import Signal
     from . import resources_pyside2
 
+else:
+    from PySide6 import QtCore, QtGui, QtWidgets
+    from PySide6.QtCore import Qt
+    from PySide6.QtCore import Signal
+    #from . import resources_pyside6
 
 class PasswordEdit(QtWidgets.QLineEdit):
     """

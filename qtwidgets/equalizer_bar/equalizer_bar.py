@@ -4,10 +4,15 @@ if 'PyQt5' in sys.modules:
     from PyQt5.QtCore import Qt
     from PyQt5.QtCore import pyqtSignal as Signal
 
-else:
+elif 'PySide2' in sys.modules:
     from PySide2 import QtCore, QtGui, QtWidgets
     from PySide2.QtCore import Qt
     from PySide2.QtCore import Signal
+    
+else:
+    from PySide6 import QtCore, QtGui, QtWidgets
+    from PySide6.QtCore import Qt
+    from PySide6.QtCore import Signal
 
 
 class EqualizerBar(QtWidgets.QWidget):
