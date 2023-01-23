@@ -11,6 +11,8 @@ class Window(QtWidgets.QMainWindow):
 
         self.equalizer = EqualizerBar(5, ['#0C0786', '#40039C', '#6A00A7', '#8F0DA3', '#B02A8F', '#CA4678', '#E06461',
                                           '#F1824C', '#FCA635', '#FCCC25', '#EFF821'])
+        self.equalizer.setBarSolidYPercent(0.4)
+        #self.equalizer.setBarSolidXPercent(0.4)
         self.setCentralWidget(self.equalizer)
 
         self._timer = QtCore.QTimer()

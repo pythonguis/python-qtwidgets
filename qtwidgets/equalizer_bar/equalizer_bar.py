@@ -134,16 +134,17 @@ class EqualizerBar(QtWidgets.QWidget):
         self.steps = colors
         self.update()
 
-
     def setBarPadding(self, i):
         self._padding = int(i)
         self.update()
 
-
-    def setBarSolidPercent(self, f):
-        self._bar_solid_percent = float(f)
+    def setBarSolidXPercent(self, f):
+        self._x_solid_percent = float(f)
         self.update()
 
+    def setBarSolidYPercent(self, f):
+        self._y_solid_percent = float(f)
+        self.update()
 
     def setBackgroundColor(self, color):
         self._background_color = QtGui.QColor(color)
