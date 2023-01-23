@@ -14,7 +14,7 @@ class ColorButton(QtWidgets.QPushButton):
     Custom Qt Widget to show a chosen color.
 
     Left-clicking the button shows the color-chooser, while
-    right-clicking resets the color to None (no-color).
+    right-clicking resets the color to the default color (None by default).
     '''
 
     colorChanged = Signal(object)

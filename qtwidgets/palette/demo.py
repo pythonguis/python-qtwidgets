@@ -1,5 +1,5 @@
-from PyQt5 import QtWidgets
-from qtwidgets import ColorButton
+from qtpy import QtCore, QtGui, QtWidgets
+from qtwidgets import PaletteGrid, PaletteHorizontal, PaletteVertical
 
 
 class Window(QtWidgets.QMainWindow):
@@ -7,8 +7,8 @@ class Window(QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
 
-        palette = ColorButton(color='red')
-        palette.colorChanged.connect(self.show_selected_color)
+        palette = PaletteGrid('17undertones') # or PaletteHorizontal, or PaletteVertical
+        palette.selected.connect(self.show_selected_color)
         self.setCentralWidget(palette)
 
     def show_selected_color(self, c):

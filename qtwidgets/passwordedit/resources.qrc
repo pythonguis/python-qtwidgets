@@ -1,7 +1,0 @@
-<!DOCTYPE RCC>
-<RCC version="1.0">
-    <qresource prefix="icons">
-        <file alias="eye.svg">eye.svg</file>
-        <file alias="hidden.svg">hidden.svg</file>
-    </qresource>
-</RCC>

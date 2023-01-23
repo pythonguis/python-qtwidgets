@@ -1,23 +1,12 @@
 import sys
 
-if 'PyQt5' in sys.modules:
-    from PyQt5.QtCore import (
-        Qt, QSize, QPoint, QPointF, QRectF,
-        QEasingCurve, QPropertyAnimation, QSequentialAnimationGroup,
-        pyqtSlot, pyqtProperty)
-    from PyQt5.QtWidgets import QCheckBox
-    from PyQt5.QtGui import QColor, QBrush, QPaintEvent, QPen, QPainter
+from qtpy.QtCore import (
+    Qt, QSize, QPoint, QPointF, QRectF,
+    QEasingCurve, QPropertyAnimation, QSequentialAnimationGroup,
+    Slot, Property)
 
-    from PyQt5.QtCore import pyqtSlot as Slot, pyqtProperty as Property
-
-else:
-    from PySide2.QtCore import (
-        Qt, QSize, QPoint, QPointF, QRectF,
-        QEasingCurve, QPropertyAnimation, QSequentialAnimationGroup,
-        Slot, Property)
-
-    from PySide2.QtWidgets import QCheckBox
-    from PySide2.QtGui import QColor, QBrush, QPaintEvent, QPen, QPainter
+from qtpy.QtWidgets import QCheckBox
+from qtpy.QtGui import QColor, QBrush, QPaintEvent, QPen, QPainter
 
 
 
