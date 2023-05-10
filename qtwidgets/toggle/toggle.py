@@ -162,8 +162,8 @@ class AnimatedToggle(Toggle):
             0, 0,
             contRect.width() - handleRadius, 0.40 * contRect.height()
         )
-        constRectCentered = constRect.center()
-        barRect.moveCenter(constRectCentered.toPointF())
+        contRectCentered = contRect.center()
+        barRect.moveCenter(contRectCentered.toPointF())
         rounding = barRect.height() / 2
 
         # the handle will move along this line
