@@ -8,6 +8,7 @@ from .paint import Paint
 from .passwordedit import PasswordEdit
 from .power_bar import PowerBar
 from .palette import PaletteGrid, PaletteHorizontal, PaletteVertical
+from .rangeslider import RangeSlider
 # from scrubber
 # from stopwatch
 from .toggle import Toggle, AnimatedToggle
