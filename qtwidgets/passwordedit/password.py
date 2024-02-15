@@ -18,7 +18,7 @@ class PasswordEdit(QtWidgets.QLineEdit):
         show_visibility=True,
         visible_icon=None,
         hidden_icon=None,
-        icons_from_theme=True,
+        icons_from_theme=False,
         *args,
         **kwargs
     ):
