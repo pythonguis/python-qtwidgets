@@ -18,6 +18,7 @@ setup(
     packages=find_packages(),
     install_requires=[
         'markdown',
+        'QtPy'
     ],
     include_package_data=True,
     classifiers=[
